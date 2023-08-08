@@ -12,12 +12,12 @@ class ExerciseActivity : AppCompatActivity() {
         binding = ActivityExerciseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolBarExercise)
+        setSupportActionBar(binding.toolbarExercise)
 
         if(supportActionBar!= null){
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
         }
-        binding.toolBarExercise.setNavigationOnClickListener{
+        binding.toolbarExercise.setNavigationOnClickListener{
             onBackPressed()
         }
     }
